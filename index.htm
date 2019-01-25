@@ -16,6 +16,7 @@
     <header>
         <img src="mc_logo.png" alt="logo">
     </header>
+    <!-- The form here is used to  -->
     <form name="cForm" action="http://www.mill_computers.com/orders/process.cgi" method="POST">
         <fieldset>
             <div>
@@ -47,7 +48,46 @@
                 <input type="text" name="phoneNumber" id="phone" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"
                     required>
             </div>
-            <input type="submit" name="submit" id="submit">
+        </fieldset>
+
+        <fieldset>
+            <fieldset>
+                <legend>Computer Specifications</legend>
+                <label>Processor Speed</label>
+                <select name="pSpeed">
+                    <option value="3.2GHz">3.2 GHz</option>
+                    <option value="4.0GHz">4.0 GHz</option>
+                    <option value="5.2GHz">5.2 GHz</option>
+                </select>
+
+                <label>Memory</label>
+                <select name="mem">
+                    <option value="1GB">1 GB</option>
+                    <option value="1GB">2 GB</option>
+                    <option value="1GB">4 GB</option>
+                    <option value="1GB">8 GB</option>
+                </select>
+
+                <label>Monitor Size</label>
+                <select name="monitor">
+                    <option value="15">15"</option>
+                    <option value="17">17"</option>
+                    <option value="19">19"</option>
+                    <option value="21">21"</option>
+                </select>
+
+                <label>Hard Drive</label>
+                <select name="hd">
+                    <option value="240GB">240 GB</option>
+                    <option value="500GB">500 GB</option>
+                    <option value=750GB"">750 GB</option>
+                    <option value="1TB">1 TB</option>
+                </select>
+            </fieldset>
+
+            <input id="submit" type="submit" name="Send Order">
+            <input id="cancel" type="reset" name="Cancel Order">
+            <button type="">Contact Me</button>
         </fieldset>
 
     </form>

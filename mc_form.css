@@ -4,3 +4,7 @@ input {
     /* float: right; */
     display: block;
 }
+
+select {
+    display: block;
+}
